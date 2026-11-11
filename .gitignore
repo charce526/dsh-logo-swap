@@ -1,0 +1,13 @@
+# dependencies / runtimes never checked in
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# local build/test scratch
+*.log
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+.vscode/

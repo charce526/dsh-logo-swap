@@ -1,0 +1,39 @@
+{
+  "name": "dsh-logo-swap",
+  "description": "DeepSeek Harness 品牌自定义插件：左上角/侧栏 Logo、字标（DeepSeek 与 Harness 两半独立设置）、对话页 Logo、欢迎语标语、预览版徽章——每项均可显示/隐藏/替换/缩放（50%–300%），一键恢复默认。纯前端注入，不改安装文件，升级不受影响。",
+  "version": "0.5.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "icon.svg",
+    "icon.png",
+    "lib/index.js",
+    "lib/client.js",
+    "lib/wm-paths.json",
+    "cordis.patch.yml",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

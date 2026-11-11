@@ -1,0 +1,5 @@
+# dsh-logo-swap profile patch layer — insert one loader entry for the plugin
+# package. Same shape as dsh-dream-skin / win-optimizer entries.
+- insert:
+    - id: logo-swap
+      name: 'dsh-logo-swap'
